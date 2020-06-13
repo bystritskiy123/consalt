@@ -5,6 +5,7 @@
     <Slider />
     <Textblock />
     <Calculator />
+    <Lastblock />
   </div>
 </template>
 
@@ -14,6 +15,7 @@
   import Slider from './components/Slider.vue'
   import Textblock from './components/Textblock.vue'
   import Calculator from './components/Calculator.vue'
+  import Lastblock from './components/Lastblock.vue'
 
   export default {
     name: 'App',
@@ -22,7 +24,8 @@
       Formablock,
       Slider,
       Textblock,
-      Calculator
+      Calculator,
+      Lastblock
     }
   }
 </script>

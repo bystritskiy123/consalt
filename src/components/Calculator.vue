@@ -42,12 +42,50 @@
         <!--Calculator-->
         <div id="Calculator">
             <div id="gallery">
-                <label v-for="img in $options.imgNames" :key="img" style="margin-right: 2rem">
+                <label v-for="img in $options.imgNames" :key="img">
                     <input type="radio" :value="img" v-model="selectedimg">
                     {{img}}
                 </label>
             </div>
-            <img :src="imgImage" :alt="selectedimg">
+            <!--<img :src="imgImage" :alt="selectedimg">-->
+        </div>
+        <div id="forma">
+            <div class="col-md-6" id="part_1">
+                <form>
+                    <div class="form-group" id="page">
+                        <h4>Ширина</h4>
+                        <label for="exampleInputEmail1">
+                            <h4>Высота</h4>
+                        </label>
+                        <img :src="imgImage" :alt="selectedimg">
+                    </div>
+                    <div class="row" id="label">
+                        <label for="exampleInputEmail1">Ширина,см</label>
+                        <label for="exampleInputEmail1">высота,см</label>
+                    </div>
+                    <div class="form-group" id="input">
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                        <h5>X</h5>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                </form>
+                <button type="button" class="one">Введите номер</button>
+            </div>
+            <form class="col-md-6" id="part_2">
+                <h4>Одностворчатое окно KBE</h4>
+                <h5>1.Критерий выбора</h5>
+                <div class="row" id="radio">
+                    <p><input name="punkt" type="radio" value="punkt">Пункт выбора 1</p>
+                    <p><input name="punkt" type="radio" value="punkt">Пункт выбора 2</p>
+                    <p><input name="punkt" type="radio" value="punkt">Пункт выбора 3</p>
+                </div>
+                <h6>2.Выбирите открывание створки</h6>
+                <select id="inputState" class="form-control">
+                    <option value="left">Влево</option>
+                    <option value="right">Вправо</option>
+                </select>
+                <button type="button" class="two">Расчитать</button>
+            </form>
         </div>
         <!--Calculator-->
     </div>
@@ -108,10 +146,107 @@
                 width: 100%;
                 margin-left: 1%;
             }
+        }
 
-            img {
-                margin-left: 10%;
+        #forma {
+            height: 40rem;
+            display: flex;
+            margin-top: 15%;
+            border: 3px solid black;
+            border-radius: 5px 5px 5px 5px;
+
+            #part_1 {
+                form {
+                    margin-top: 5%;
+
+                    #page {
+                        margin-left: 10%;
+
+                        img {
+                            width: 50%;
+                            margin-left: 5%;
+                        }
+
+                        h4 {
+                            margin-left: 35%;
+                        }
+
+                        label {
+                            h4 {
+                                transform: rotate(-90deg);
+                                transform-origin: left top 2;
+                            }
+                        }
+                    }
+                }
+
+                #input {
+                    display: flex;
+                    margin-left: 20%;
+                    width: 50%;
+                }
+
+                #label {
+                    margin-left: 22%;
+
+                    label {
+                        margin-left: 5%;
+                        font-size: 150%;
+                    }
+                }
+
+                .one {
+                    margin-left: 50%;
+                    margin-top: 40%;
+                    font-family: 'Myriad_Pro';
+                    font-size: 130%;
+                    width: 30%;
+                    border-radius: 4px 4px 4px 4px;
+                }
+            }
+
+            #part_2 {
+                h4 {
+                    font-family: 'Myriad_Pro';
+                    color: blue;
+                    margin-top: 10%;
+                }
+
+                h5 {
+                    font-family: 'Myriad_Pro';
+                    margin-top: 10%;
+                    font-size: 150%;
+                }
+
+                #radio {
+                    margin-top: 3%;
+
+                    p {
+                        margin-left: 2%;
+                        font-family: 'Myriad_Pro';
+                        font-size: 120%;
+                    }
+                }
+
+                h6 {
+                    font-family: 'Myriad_Pro';
+                    font-size: 130%;
+                    margin-top: 15%;
+                }
+
+                .form-control {
+                    width: 40%;
+                }
+            }
+
+            .two {
                 margin-top: 10%;
+                font-family: 'Myriad_Pro';
+                font-size: 130%;
+                width: 30%;
+                border-radius: 4px 4px 4px 4px;
+                background: rebeccapurple;
+                color: white;
             }
         }
 
