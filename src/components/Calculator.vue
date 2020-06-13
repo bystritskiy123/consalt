@@ -38,6 +38,12 @@
                 </div>
             </div>
         </div>
+
+        <!--Calculator-->
+
+        <!--Calculator-->
+
+
     </div>
 </template>
 
@@ -72,6 +78,9 @@
                 font-size: 110%;
             }
         }
+
+
+
     }
 
 
