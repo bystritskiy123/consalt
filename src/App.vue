@@ -3,6 +3,7 @@
     <HelloWorld />
     <Formablock />
     <Slider />
+    <Textblock />
   </div>
 </template>
 
@@ -10,13 +11,15 @@
   import HelloWorld from './components/HelloWorld.vue'
   import Formablock from './components/Formablock.vue'
   import Slider from './components/Slider.vue'
+  import Textblock from './components/Textblock.vue'
 
   export default {
     name: 'App',
     components: {
       HelloWorld,
       Formablock,
-      Slider
+      Slider,
+      Textblock
     }
   }
 </script>

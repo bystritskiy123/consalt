@@ -94,11 +94,12 @@
     }
 
     /*adaptation*/
-    @media (min-width:350px) and (max-width:820px) {
+    @media (min-width:300px) and (max-width:820px) {
         #block {
             .col-md-12 {
                 form {
                     width: 90%;
+                    height: 53%;
                     margin-left: 5%;
                     margin-top: 20%;
                 }
