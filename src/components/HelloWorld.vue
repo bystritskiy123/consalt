@@ -1,57 +1,183 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+    <div class="col-md-12">
+      <div class="col-md-6 part_1">
+        <img src="../assets/logo.png" alt="logo">
+      </div>
+      <div class="col-md-6 part_2">
+        <div class="text">
+          <a href="#">
+            <h3>+7(499)777-77-77</h3>
+          </a><a href="#">
+            <h3>+7(499)777-77-77</h3>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
+  export default {
+    name: 'HelloWorld',
+    data() {
+      return {
+
+      }
+    }
   }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  @font-face {
+    font-family: 'Myriad_Pro';
+    src: url("../fonts/Myriad_Pro.ttf") format("truetype");
+  }
+
+  .hello {
+    background-color: rgba(128, 128, 128, 0.479);
+    background-size: cover;
+    width: 100%;
+    height: 13rem;
+    display: flex;
+
+    .col-md-12 {
+      width: 1000px;
+      display: flex;
+
+      .part_1 {
+        img {
+          margin-left: 50%;
+          margin-top: 7%;
+          width: auto;
+          height: auto;
+        }
+      }
+
+      .part_2 {
+        .text {
+          margin-left: 15%;
+          margin-top: 8%;
+
+          a {
+            color: gray;
+            text-decoration: none;
+
+            h3 {
+              font-size: 170%;
+              font-family: 'Myriad_Pro';
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width:300px) and (max-width:820px) {
+    .hello {
+      height: 10rem;
+
+      .col-md-12 {
+        .part_1 {
+          img {
+            width: 100%;
+            height: auto;
+            margin-top: 30%;
+            margin-left: 15%;
+          }
+        }
+
+        .part_2 {
+          .text {
+            margin-top: 33%;
+
+            a {
+              h3 {
+                font-size: 80%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width:768px) and (max-width:1023px) {
+    .hello {
+      .col-md-12 {
+        .part_1 {
+          img {
+            width: 70%;
+            margin-top: 8%;
+            margin-left: 40%;
+          }
+        }
+
+        .part_2 {
+          .text {
+            margin-top: 12%;
+
+            a {
+              h3 {
+                font-size: 130%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width:1024px) and (max-width:1370px) {
+    .hello {
+      .col-md-12 {
+        .part_1 {
+          img {
+            margin-top: 10%;
+          }
+        }
+
+        .part_2 {
+          .text {
+            margin-top: 11%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width:1920px) {
+    .hello {
+      height: 15rem;
+    }
+  }
+
+  @media (min-width:2500px) {
+    .hello {
+      width: 170rem;
+      height: 17rem;
+
+      .col-md-12 {
+        .part_1 {
+          img {
+            width: 30%;
+            margin-top: 5%;
+          }
+        }
+
+        .part_2 {
+          .text {
+            margin-top: 6%;
+
+            a {
+              h3 {
+                font-size: 250%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 </style>
