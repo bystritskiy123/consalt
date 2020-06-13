@@ -4,6 +4,7 @@
     <Formablock />
     <Slider />
     <Textblock />
+    <Calculator />
   </div>
 </template>
 
@@ -12,6 +13,7 @@
   import Formablock from './components/Formablock.vue'
   import Slider from './components/Slider.vue'
   import Textblock from './components/Textblock.vue'
+  import Calculator from './components/Calculator.vue'
 
   export default {
     name: 'App',
@@ -19,7 +21,8 @@
       HelloWorld,
       Formablock,
       Slider,
-      Textblock
+      Textblock,
+      Calculator
     }
   }
 </script>
