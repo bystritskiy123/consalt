@@ -83,6 +83,7 @@
 
     #main {
         overflow-x: hidden;
+        overflow-y: hidden;
 
         #Calculator {
             #gallery {
