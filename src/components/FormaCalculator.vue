@@ -8,7 +8,7 @@
                 </label>
             </div>
         </div>
-        <div id="forma">
+        <div id="forma" class="conatiner-fluid">
             <div class="col-md-6" id="part_1">
                 <form>
                     <div class="form-group" id="page">
