@@ -82,6 +82,8 @@
     }
 
     #main {
+        overflow-x: hidden;
+
         #Calculator {
             #gallery {
                 display: flex;
@@ -273,6 +275,8 @@
 
     @media (min-width:768px) and (max-width:1023px) {
         #main {
+
+
             #forma {
                 height: 40rem;
 
