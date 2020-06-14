@@ -7,7 +7,6 @@
                     {{img}}
                 </label>
             </div>
-            <!--<img :src="imgImage" :alt="selectedimg">-->
         </div>
         <div id="forma">
             <div class="col-md-6" id="part_1">
@@ -192,6 +191,288 @@
                 border-radius: 4px 4px 4px 4px;
                 background: rebeccapurple;
                 color: white;
+            }
+        }
+    }
+
+    /*adaptation*/
+    @media (min-width:300px) and (max-width:820px) {
+        #main {
+            #forma {
+                height: 40rem;
+
+                #part_1 {
+                    form {
+                        #page {
+                            h4 {
+                                display: none;
+                            }
+
+                            label {
+                                h4 {
+                                    display: none;
+                                }
+                            }
+
+                            img {
+                                width: 100%;
+                                margin-top: 20%;
+                            }
+                        }
+
+                        #label {
+                            margin-left: 10%;
+
+                            label {
+                                font-size: 130%;
+                            }
+                        }
+
+                        #input {
+                            width: 100%;
+                            margin-left: 5%;
+                        }
+                    }
+
+                    .one {
+                        width: 100%;
+                        margin-left: 0%;
+                        margin-top: 110%;
+                        font-size: 110%;
+                    }
+                }
+
+                #part_2 {
+                    h4 {
+                        font-size: 100%;
+                        margin-top: 20%;
+                    }
+
+                    h5 {
+                        font-size: 120%;
+                        margin-top: 20%;
+                    }
+
+                    #radio {
+                        font-size: 90%;
+                    }
+
+                    #inputState {
+                        width: 100%;
+                    }
+
+                    .two {
+                        width: 100%;
+                        font-size: 110%;
+                        margin-top: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width:768px) and (max-width:1023px) {
+        #main {
+            #forma {
+                height: 40rem;
+
+                #part_1 {
+                    form {
+                        #page {
+                            margin-left: 0%;
+
+                            h4 {
+                                display: flex;
+                                margin-left: 40%;
+                            }
+
+                            label {
+                                h4 {
+                                    display: flex;
+                                }
+                            }
+
+                            img {
+                                width: 50%;
+                                margin-top: 5%;
+                            }
+                        }
+
+                        #label {
+                            margin-left: 15%;
+                            margin-top: 20%;
+
+                            label {
+                                font-size: 130%;
+                            }
+                        }
+
+                        #input {
+                            width: 80%;
+                            margin-left: 13%;
+                        }
+                    }
+
+                    .one {
+                        width: 50%;
+                        margin-left: 30%;
+                        margin-top: 30%;
+                        font-size: 110%;
+                    }
+                }
+
+                #part_2 {
+                    h4 {
+                        font-size: 100%;
+                    }
+
+                    h5 {
+                        font-size: 120%;
+                    }
+
+                    #radio {
+                        font-size: 90%;
+                    }
+
+                    h6 {
+                        margin-top: 25%;
+                    }
+
+                    #inputState {
+                        width: 100%;
+                    }
+
+                    .two {
+                        width: 50%;
+                        font-size: 110%;
+                        margin-top: 35%;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width:1024px) and (max-width:1370px) {
+        #main {
+            #forma {
+                #part_1 {
+                    .one {
+                        width: 40%;
+                        margin-top: 18%;
+                    }
+
+                    form {
+                        #label {
+                            margin-top: 10%;
+                        }
+
+                        #input {
+                            margin-left: 25%;
+                            width: 60%;
+                        }
+                    }
+                }
+
+                #part_2 {
+                    h6 {
+                        margin-top: 20%;
+                    }
+
+                    .two {
+                        margin-top: 22%;
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media (min-width:1920px) {
+        #main {
+            #forma {
+                height: 65rem;
+
+                #part_1 {
+                    form {
+                        #label {
+                            margin-top: 10%;
+                            margin-left: 25%;
+                        }
+                    }
+
+                    .one {
+                        margin-top: 20%;
+                    }
+                }
+
+                #part_2 {
+                    h6 {
+                        margin-top: 26%;
+                    }
+
+                    .two {
+                        margin-top: 22%;
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media (min-width:2500px) {
+        #main {
+            #forma {
+                height: 80rem;
+
+                #part_1 {
+                    form {
+                        #page {
+                            h4 {
+                                font-size: 300%;
+                            }
+                        }
+
+                        #label {
+                            margin-left: 25%;
+                            font-size: 150%;
+                        }
+
+                        #input {
+                            margin-left: 28%;
+
+                            input {
+                                width: 35%;
+                                height: 3rem;
+                            }
+                        }
+                    }
+                }
+
+
+                #part_2 {
+                    h4 {
+                        font-size: 300%;
+                    }
+
+                    h5 {
+                        font-size: 300%;
+                    }
+
+                    #radio {
+                        p {
+                            font-size: 250%;
+                        }
+                    }
+
+                    h6 {
+                        font-size: 250%;
+                        margin-top: 22%;
+                    }
+
+                    .two {
+                        margin-top: 22%;
+                    }
+                }
             }
         }
     }
