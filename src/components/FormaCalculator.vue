@@ -72,7 +72,7 @@
             }
         },
         // A small trick to have non-reactive elements in the component.
-        imgNames: ["img_1", "img_2", "img_3", "img_4", "img_5"]
+        imgNames: ["1", "2", "3", "4", "5"]
     }
 </script>
 
